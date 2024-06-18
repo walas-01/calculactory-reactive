@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculactory</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="/src/imgs/icons/logo1.png" alt="logo" class="nav-icon">
+            <img src="/src/imgs/icons/calculactory_logo.png" alt="calculactory_logo" class="nav-name">
+        </div>
+        <div class="nav-icons"> <!-- [please]--->
+            <a href="https://github.com/walas-01/calculactory"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a href="https://paypal.me/walas7081?country.x=AR&locale.x=en_US"><i class="fa-brands fa-paypal fa-2xl"></i></a>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <div class="message">
+            <h2>Welcome to <span>Calculactory</span>!</h2>
+            <br>
+            <p>This is a simplistic Satisfactory calculator that is still under construction. Simply select the quantity of an item you wish to craft, and I'll calculate the previous requirements for you. I recommend using it on your phone. Please consider <a href="https://paypal.me/walas7081?country.x=AR&locale.x=en_US">donating</a> so that I can keep updating and upgrading the website!</p>
+        </div>
+
+        <form id="form">
+            <div>
+                <label for="inItem">Wanted Item</label>
+                <select name="inItem" id="inItem">
+                </select>
+            </div>
+            <div>
+                <label for="inAmount">Out Per Minute</label>
+                <input type="number" id="inAmount" step="0.5" min="1" max="2000" value="20">
+            </div>
+            <button type="submit" class="btn-get"><img src="/src/imgs/icons/hammer_icon.png" alt="hammer_icon"></button>  
+        </form>
+
+        <ul class="tree itemCard-container">
+
+        </ul>
+
+        <!--
+            <div class="card">
+                <div class="card-img">
+                    <h5>Reinforced Iron Plate</h5>
+                    <img  class="card-img-icon" src="/src/imgs/Reinforced_Iron_Plate.png" alt="img">
+                </div>
+                <div class="card-output">
+                    <img src="/src/imgs/icons/icon_out.png" alt="outputIcon">
+                    <h5>90</h5>
+                    <p>/min</p>
+                </div>
+                <div class="card-machine">
+                    <img src="/src/imgs/icons/assembler_icon.png" alt="imgMachine">
+                    <p>2</p>
+                </div>
+                <button class="button">[ + ]</button>
+            </div>
+        --> 
+
+           
+
+
+    </main>
+
+    <script src="/src/js/app.js" type="module"></script>
+</body>
+</html>
