@@ -1,4 +1,5 @@
 import {createRoot} from 'react-dom/client'
+import App from './src/App.jsx'
 
 const root = createRoot(document.getElementById('root'))
-root.render(<h1>bruh, this is so easy</h1>)
+root.render(<App/>)
