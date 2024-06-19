@@ -1,0 +1,69 @@
+/*------------------------------------------------------[form]-*/
+main {
+  margin: 3rem auto;
+}
+
+form {
+  width: 85%;
+  margin: auto auto;
+  padding: 1rem;
+  
+  background-color: #111111;
+  border: solid 4px #E23F34;
+  border-radius: 8px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+@media (min-width: 1600px) {
+  form {
+    width: 25%;
+  }
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+form label {
+  font-weight: 700;
+  font-size: small;
+}
+@media (min-width: 1600px) {
+  form label {
+    font-size: medium;
+  }
+}
+form input,
+form select {
+  background-color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+}
+
+
+form input option,
+form select option {
+  font-weight: 600;
+}
+form button {
+  border: none;
+  padding: 10px;
+  background-color: #e23f34;
+  border-radius: 2px;
+  grid-column: 1/3;
+  font-weight: 700;
+  font-size: large;
+  cursor: pointer;
+}
+form button img {
+  max-width: 60px;
+}
+form button:hover {
+  background-color: rgb(255, 172, 172);
+  scale: 1.02;
+}
