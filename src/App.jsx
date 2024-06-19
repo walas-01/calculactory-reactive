@@ -1,11 +1,11 @@
 import {react} from 'react'
 
-// import Navbar
+import Navbar from './components/Navbar/Navbar.jsx'
 
 function App(){
     return(
         <>
-            
+            <Navbar/>
         
         </>
     )

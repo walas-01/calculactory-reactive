@@ -1,0 +1,51 @@
+/*------------------------------------------------------[navbar]-*/
+nav {
+  max-width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  background-color: #323232;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1600px) {
+  nav {
+    max-width: 70%;
+    margin: auto;
+  }
+}
+@media (min-width: 1600px) {
+  nav {
+    justify-content: space-around;
+  }
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.brand-container .nav-icon {
+  width: 40px;
+}
+.brand-container .nav-name {
+  width: 180px;
+}
+
+nav .nav-links a {
+  margin: 0 1rem;
+  display: none;
+  color: #e55447;
+  cursor: pointer;
+}
+@media (min-width: 1600px) {
+  nav .nav-links a {
+    display: inline-block;
+  }
+}
+nav .nav-links a:hover {
+  color: white;
+  scale: 1.1;
+}
