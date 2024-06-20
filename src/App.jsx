@@ -19,7 +19,7 @@ function App() {
       <Form/>
 
       <div className="card-container">
-        <Card />
+        <Card itemName={"iron_plate"} desiredOutput={15} />
       </div>
     </>
   );
