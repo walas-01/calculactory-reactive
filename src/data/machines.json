@@ -1,0 +1,12 @@
+[
+    {"name":"miner","img":"src/imgs/icons/miner_icon.png"},
+    {"name":"smelter","img":"src/imgs/icons/smelter_icon.png"},
+    {"name":"constructor","img":"src/imgs/icons/constructor_icon.png"},
+    {"name":"assembler","img":"src/imgs/icons/assembler_icon.png"},
+    {"name":"water_extractor","img":"src/imgs/icons/water_extractor_icon.png"},
+    {"name":"foundry","img":"src/imgs/icons/foundry_icon.png"},
+    {"name":"manufacturer","img":"src/imgs/icons/manufacturer_icon.png"},
+    {"name":"oil_extractor","img":"src/imgs/icons/oil_extractor_icon.png"},
+    {"name":"refinery","img":"src/imgs/icons/refinery_icon.png"},
+    {"name":"blender","img":"src/imgs/icons/blender_icon.png"}
+] 
