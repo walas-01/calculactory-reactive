@@ -1,0 +1,97 @@
+/*/------------------------------------------------------------[ Card ]*/
+
+.card{
+  border: solid 4px #e23f34;
+  border-radius: 8px;
+}
+
+.card h5{
+  padding: 8px 20px;
+
+  background-color: #e23f34;
+  color: #1d1d1d;
+  font-size: large;
+}
+
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card-grid{
+  margin:10px 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.card-img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+
+  align-self: center;
+}
+.card-img img{
+  min-width: 120px;
+
+}
+
+
+
+.card-output{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card-output img{
+  width: 20px;
+}
+
+
+
+
+
+
+
+.card-machine{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.card-machine p {
+  font-size: large;
+  font-weight: bold;
+}
+.card-machine img{
+  width: 40px;
+}
+
+
+.card button {
+  width: 90%;
+  padding: 5px;
+
+  margin: 15px 0px;
+  align-self: center;
+  justify-self: center;
+
+  border: none;
+  border-radius: 3px;
+  background-color: #e23f34;
+
+  color: #1d1d1d;
+  font-size: large;
+  font-weight: bolder;
+}
+.card button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
