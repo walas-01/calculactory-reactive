@@ -28,31 +28,14 @@ function Card({itemName,desiredOutput}) {
     }
 
     fetchItem(itemName)
-
-    
-    /*
-    productRate = desiredOutput / item.outPerMin[0].amountPerMin
-    
-    console.log("[Defining Card]:")
-    console.log("Item name: ",item.showName)
-    console.log("Desired Output: ",desiredOutput)
-    console.log("Product rate: ", productRate)
-    
-    */
-  },[])
+  },[itemName,desiredOutput])
   
 
   if(item.outPerMin){
-    console.log(item.img)
-    productRate = desiredOutput / item.outPerMin[0].amountPerMin
+    productRate = Number((desiredOutput / item.outPerMin[0].amountPerMin).toFixed(1));
   }
 
-  
-
-
   //* onClickHandler()
-
-  //! DE  METER LAS IMAGENES DELAS MACHINES DIRECTAMENTE EN ITEMS.JSON
 
   return (
     <>
@@ -70,7 +53,7 @@ function Card({itemName,desiredOutput}) {
               <p className="card-output-tag">/min</p>
             </div>
             <div className="card-machine">
-              <img className="card-machine-img" src="/src/imgs/icons/assembler_icon.png" alt="imgMachine" />
+              <img className="card-machine-img" src={item.machineImg} alt="imgMachine" />
               <p>x{productRate}</p>
             </div>
           </div>

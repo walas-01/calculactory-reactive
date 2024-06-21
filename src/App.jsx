@@ -3,8 +3,18 @@ import Form from "./components/Form/Form.jsx";
 import Card from "./components/Card/Card.jsx";
 
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [firstItem,setFirstItem] = useState(null)
+
+  const renderFirstCard = ()=>{
+    if(firstItem){
+      console.log("Rendering: ",firstItem)
+      return(<Card itemName={firstItem.inItem} desiredOutput={firstItem.inAmount} />)
+    }
+  }
+
   return (
     <>
       <Navbar />
@@ -16,13 +26,15 @@ function App() {
         </p>    
       </div>
 
-      <Form/>
+      <Form setFirstItem={setFirstItem}/>
 
       <div className="card-container">
-        <Card itemName={"iron_plate"} desiredOutput={15} />
+        {renderFirstCard()}
       </div>
     </>
   );
 }
+
+//<Card itemName={"iron_plate"} desiredOutput={15} />
 
 export default App;
