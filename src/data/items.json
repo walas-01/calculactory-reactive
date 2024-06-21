@@ -92,7 +92,7 @@
         "name": "reinforced_iron_plate",
         "img":"src/imgs/Reinforced_Iron_Plate.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"iron_plate","amountPerMin":30},
             {"name":"screw","amountPerMin":60}
@@ -104,7 +104,7 @@
         "name": "alt_bolted_iron_plate",
         "img":"src/imgs/Alternate_Reinforced_Iron_Plate.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"iron_plate","amountPerMin":90},
             {"name":"screw","amountPerMin":250}
@@ -116,7 +116,7 @@
         "name": "alt_stitched_iron_plate",
         "img":"src/imgs/Alternate_Reinforced_Iron_Plate.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"iron_plate","amountPerMin":18.75},
             {"name":"wire","amountPerMin":37.5}
@@ -172,7 +172,7 @@
         "name": "alt_insulated_cable",
         "img":"src/imgs/Alternate_Cable.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"wire","amountPerMin":45},
             {"name":"rubber","amountPerMin":30}
@@ -314,7 +314,7 @@
         "name": "encased_industrial_beam",
         "img":"src/imgs/Encased_Industrial_Beam.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"steel_beam","amountPerMin":24},
             {"name":"concrete","amountPerMin":30}
@@ -326,7 +326,7 @@
         "name": "rotor",
         "img":"src/imgs/Rotor.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"iron_rod","amountPerMin":20},
             {"name":"screw","amountPerMin":100}
@@ -338,7 +338,7 @@
         "name": "modular_frame",
         "img":"src/imgs/Modular_Frame.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"reinforced_iron_plate","amountPerMin":3},
             {"name":"iron_rod","amountPerMin":12}
@@ -350,7 +350,7 @@
         "name": "stator",
         "img":"src/imgs/Stator.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"steel_pipe","amountPerMin":15},
             {"name":"wire","amountPerMin":40}
@@ -362,7 +362,7 @@
         "name": "motor",
         "img":"src/imgs/Motor.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"rotor","amountPerMin": 10},
             {"name":"stator","amountPerMin": 10}
@@ -374,7 +374,7 @@
         "name": "circuit_board",
         "img":"src/imgs/Circuit_Board.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"copper_sheet","amountPerMin": 15},
             {"name":"plastic","amountPerMin": 30}
@@ -566,7 +566,7 @@
         "name": "ai_limiter",
         "img":"src/imgs/AI_Limiter.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"copper_sheet","amountPerMin": 25},
             {"name":"quickwire","amountPerMin": 100}
