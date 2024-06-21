@@ -1,7 +1,8 @@
 /*/------------------------------------------------------------[ Card ]*/
 
 .card{
-  border: solid 4px #e23f34;
+  margin: 5px 0px;
+  border: solid 4px #e6392d;
   border-radius: 8px;
 }
 
@@ -10,11 +11,10 @@
 
   align-self: center;
   justify-self: center;
-  background-color: #e23f34;
-  color: #1d1d1d;
+  background-color: #e6392d;
+  color: black;
   font-size: large;
 }
-
 
 .card-content{
   display: flex;
@@ -22,12 +22,10 @@
   align-items: center;
 }
 
-
-
 .card-grid{
   margin:10px 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
 }
@@ -43,8 +41,6 @@
   min-width: 80px;
 
 }
-
-
 
 .card-output{
   display: flex;
@@ -101,9 +97,9 @@
 
   border: none;
   border-radius: 3px;
-  background-color: #e23f34;
+  background-color: #e6392d;
 
-  color: #1d1d1d;
+  color: black;
   font-size: medium;
   font-weight: bolder;
 }
@@ -112,3 +108,7 @@
   cursor: pointer;
 }
 
+
+.card-card-container{
+  margin-left: 4rem;
+}

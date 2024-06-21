@@ -8,7 +8,6 @@ form {
   margin: auto auto;
   padding: 1rem;
   
-  background-color: #111111;
   border: solid 4px #E23F34;
   border-radius: 8px;
 
@@ -65,5 +64,5 @@ form button img {
 }
 form button:hover {
   background-color: rgb(255, 172, 172);
-  scale: 1.02;
+  scale: 1.01;
 }

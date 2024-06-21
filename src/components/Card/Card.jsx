@@ -39,7 +39,7 @@ function Card({itemName,desiredOutput}) {
 
   return (
     <>
-      <div className="card">
+      <li className="card">
         <h5>{item.showName}</h5>
 
         <section className="card-content">
@@ -57,13 +57,12 @@ function Card({itemName,desiredOutput}) {
               <p>x{productRate}</p>
             </div>
           </div>
-          <button className="button">{"[ Expand ]"}</button>
+          <button className="button">Add</button>
         </section>
+      </li>
 
-      </div>
-
-      <ul>
-
+      <ul className="card-card-container">
+        {inputList.map((item,i)=><Card itemName={item.name} desiredOutput={item}></Card>)}
       </ul>
 
     </>
