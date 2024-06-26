@@ -28,9 +28,9 @@ function App() {
 
       <Form setFirstItem={setFirstItem}/>
 
-      <div className="card-container">
+      <ul className="card-container">
         {renderFirstCard()}
-      </div>
+      </ul>
     </>
   );
 }

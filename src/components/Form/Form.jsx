@@ -10,6 +10,7 @@ function Form({setFirstItem}){
     const payload = Object.fromEntries(formData)
     payload.inAmount = Number(payload.inAmount)
     console.log(payload)
+    setFirstItem(null)
     setFirstItem(payload)
   }
 

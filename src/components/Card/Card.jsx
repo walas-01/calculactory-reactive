@@ -1,16 +1,8 @@
 import { useEffect, useState } from "react";
 
-
 import "./Card_style.css";
-import ironplateImg from '../../imgs/Reinforced_Iron_Plate.png'
-
-
-
-
-
 
 function Card({itemName,desiredOutput}) {
-
   const [inputList,setInputList] = useState([])
   
   const [item,setItem] = useState({})
@@ -28,17 +20,24 @@ function Card({itemName,desiredOutput}) {
     }
 
     fetchItem(itemName)
+    setInputList([])
   },[itemName,desiredOutput])
+
+
   
 
   if(item.outPerMin){
     productRate = Number((desiredOutput / item.outPerMin[0].amountPerMin).toFixed(1));
   }
 
-  //* onClickHandler()
+  const onClickHandler = ()=>{
+    setInputList(item.inPerMin)
+  }
+
+
 
   return (
-    <>
+    <div>
       <li className="card">
         <h5>{item.showName}</h5>
 
@@ -57,15 +56,19 @@ function Card({itemName,desiredOutput}) {
               <p>x{productRate}</p>
             </div>
           </div>
-          <button className="button">Add</button>
+          {item.inPerMin && inputList.length == 0? <button className="button" onClick={onClickHandler}>Add</button> : ""}
+          
         </section>
+
+
+
       </li>
 
-      <ul className="card-card-container">
-        {inputList.map((item,i)=><Card itemName={item.name} desiredOutput={item}></Card>)}
-      </ul>
+        <ul className="card-card-container">
+          {inputList.map((item,i)=><Card key={i} itemName={item.name}  desiredOutput={item.amountPerMin}/>)}
+        </ul>
 
-    </>
+    </div>
   )
 }
 
