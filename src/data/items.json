@@ -674,7 +674,7 @@
         "name": "em_control_rod",
         "img":"src/imgs/Electromagnetic_Control_Rod.png",
         "machine": "assembler",
-        "machineimg":"src/imgs/icons/assembler_icon.png",
+        "machineImg":"src/imgs/icons/assembler_icon.png",
         "inPerMin": [
             {"name":"stator","amountPerMin": 6},
             {"name":"ai_limiter","amountPerMin": 4}

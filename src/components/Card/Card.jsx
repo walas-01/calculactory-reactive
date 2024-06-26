@@ -23,9 +23,6 @@ function Card({itemName,desiredOutput}) {
     setInputList([])
   },[itemName,desiredOutput])
 
-
-  
-
   if(item.outPerMin){
     productRate = Number((desiredOutput / item.outPerMin[0].amountPerMin).toFixed(1));
   }
@@ -33,8 +30,6 @@ function Card({itemName,desiredOutput}) {
   const onClickHandler = ()=>{
     setInputList(item.inPerMin)
   }
-
-
 
   return (
     <div>
@@ -65,7 +60,7 @@ function Card({itemName,desiredOutput}) {
       </li>
 
         <ul className="card-card-container">
-          {inputList.map((item,i)=><Card key={i} itemName={item.name}  desiredOutput={item.amountPerMin}/>)}
+          {inputList.map((item,i)=><Card key={i} itemName={item.name}  desiredOutput={item.amountPerMin * productRate}/>)}
         </ul>
 
     </div>
