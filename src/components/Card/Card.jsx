@@ -51,7 +51,7 @@ function Card({itemName,desiredOutput}) {
               <p>x{productRate}</p>
             </div>
           </div>
-          {item.inPerMin && inputList.length == 0? <button className="button" onClick={onClickHandler}>Add</button> : ""}
+          {item.inPerMin && inputList.length == 0? <button className="button" onClick={onClickHandler}>{"< Expand >"}</button> : ""}
           
         </section>
 
@@ -60,7 +60,7 @@ function Card({itemName,desiredOutput}) {
       </li>
 
         <ul className="card-card-container">
-          {inputList.map((item,i)=><Card key={i} itemName={item.name}  desiredOutput={item.amountPerMin * productRate}/>)}
+          {inputList.map((item,i)=><Card key={i} itemName={item.name}  desiredOutput={(item.amountPerMin * productRate).toFixed(1)}/>)}
         </ul>
 
     </div>
