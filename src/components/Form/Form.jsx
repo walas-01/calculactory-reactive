@@ -1,6 +1,8 @@
-import data from '../../data/items.json';
+import data from '../../data/items.json'
 
 import './Form_style.css'
+import hammerIcon from '../../imgs/icons/hammer_icon.png'
+
 
 function Form({setFirstItem}){
 
@@ -13,7 +15,6 @@ function Form({setFirstItem}){
     setFirstItem(null)
     setFirstItem(payload)
   }
-
 
   return(
     <form id="form" onSubmit={handleSubmit}>
@@ -32,7 +33,7 @@ function Form({setFirstItem}){
         <input type="number" name="inAmount" step="0.5" min="1" max="2000" defaultValue="20"/>
       </div>
 
-      <button type="submit"><img src="/src/imgs/icons/hammer_icon.png" alt="hammer_icon"/></button>  
+      <button type="submit"><img src={hammerIcon} alt="hammer_icon"/></button>  
         
     </form>
 )}

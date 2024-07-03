@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 
 import "./Card_style.css";
+import outputIcon from '../../imgs/icons/icon_out.png'
+import itemList from '../../data/items.json'
+
 
 function Card({itemName,desiredOutput}) {
   const [inputList,setInputList] = useState([])
@@ -11,8 +14,8 @@ function Card({itemName,desiredOutput}) {
 
     const fetchItem = async(itemName)=>{
       try{
-        const response = await fetch("/src/data/items.json")
-        const itemList = await response.json()
+        //const response = await fetch("/src/data/items.json")
+        //const itemList = await response.json()
     
         setItem( itemList.find(itm => itm.name === itemName))
 
@@ -42,7 +45,7 @@ function Card({itemName,desiredOutput}) {
               <img src={item.img} alt="item"/>
             </div>
             <div className="card-output">
-              <img src="/src/imgs/icons/icon_out.png" alt="outputIcon" />
+              <img src={outputIcon} alt="outputIcon" />
               <p className="card-output-amount">{desiredOutput}</p>
               <p className="card-output-tag">/min</p>
             </div>
