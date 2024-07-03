@@ -3,8 +3,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     plugins:[
-      react([
-        'public/index.html'
-      ])
+      react({template: { transformAssetUrls: {includeAbsolute: false,},},})
     ]
 })
+
+
+
+
