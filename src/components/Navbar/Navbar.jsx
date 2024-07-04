@@ -3,8 +3,6 @@
 import './Navbar_style.css'
 
 import { FaGithub,FaPaypal } from "react-icons/fa";
-import calIcon from '../../imgs/icons/calculactory_icon.png'
-import calLogo from '../../imgs/icons/calculactory_logo.png'
 
 // react-icons
 
@@ -12,8 +10,8 @@ function Navbar(){
     return(
         <nav>
             <div className='brand-container'>
-                <img src={calIcon} alt="calculactory_icon" className='nav-icon'/>
-                <img src={calLogo} alt="calculactory_logo" className='nav-name'/>
+                <img src="/imgs/icons/calculactory_icon.png" alt="calculactory_icon" className='nav-icon'/>
+                <img src="/imgs/icons/calculactory_logo.png" alt="calculactory_logo" className='nav-name'/>
             </div>
             <div className='nav-links'>
                 <a href="https://github.com/walas-01/calculactory-reactive"> <FaGithub size={30}/> </a>

@@ -42,7 +42,7 @@ function Card({itemName,desiredOutput}) {
               <img src={item.img} alt="item"/>
             </div>
             <div className="card-output">
-              <img src="/src/imgs/icons/icon_out.png" alt="outputIcon" />
+              <img src="/imgs/icons/icon_out.png" alt="outputIcon" />
               <p className="card-output-amount">{desiredOutput}</p>
               <p className="card-output-tag">/min</p>
             </div>
