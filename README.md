@@ -3,8 +3,9 @@ Please consider donating so that I can keep updating and upgrading the website!
 
 React.js using Vite
 
-Packeges Used:
+firebaseBranch is the actual branch used for deploying with Firebase Hosting
 
+>Packeges Used:
 - npm install react react-dom
 - npm install react-icons
 
