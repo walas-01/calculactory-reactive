@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 import "./Card_style.css";
 
+import itemList from "../../data/items.json"
+
 function Card({itemName,desiredOutput}) {
   const [inputList,setInputList] = useState([])
   
@@ -11,8 +13,8 @@ function Card({itemName,desiredOutput}) {
 
     const fetchItem = async(itemName)=>{
       try{
-        const response = await fetch("/src/data/items.json")
-        const itemList = await response.json()
+        //const response = await fetch("/src/data/items.json")
+        //const itemList = await response.json()
     
         setItem( itemList.find(itm => itm.name === itemName))
 

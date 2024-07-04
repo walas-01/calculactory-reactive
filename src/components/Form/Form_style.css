@@ -6,34 +6,35 @@ main {
 form {
   width: 85%;
   margin: auto auto;
-  padding: 1rem;
+  padding: 0.5rem;
   
   border: solid 4px #E23F34;
   border-radius: 8px;
 
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-@media (min-width: 1600px) {
+
+@media (min-width: 1200px) {
   form {
-    width: 25%;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: none;
   }
 }
+
 form div {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
 }
 form label {
   font-weight: 700;
-  font-size: small;
+  font-size: smaller;
 }
-@media (min-width: 1600px) {
-  form label {
-    font-size: medium;
-  }
-}
+
 form input,
 form select {
   background-color: white;

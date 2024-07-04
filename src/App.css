@@ -8,7 +8,7 @@
   font-weight: 700;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .message {
     font-size: medium;
     width: 30%;

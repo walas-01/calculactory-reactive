@@ -1,7 +1,7 @@
 /*/------------------------------------------------------------[ Card ]*/
 
 .card{
-  width: 220px;
+  width: 180px;
   margin: 5px 0px;
   
   border-left: solid 4px #e6392d ;
@@ -10,6 +10,12 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 
+}
+
+@media (min-width: 1200px) {
+  .card{
+    width: 220px;
+  }
 }
 
 .card h5{
@@ -21,7 +27,13 @@
   justify-self: center;
   background-color: #e6392d;
   color: black;
-  font-size: large;
+  font-size: small;
+}
+
+@media (min-width: 1200px) {
+  .card h5{
+    font-size: large;
+  }
 }
 
 .card-content{
@@ -35,7 +47,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  gap: 5px;
+}
+
+@media (min-width: 1200px) {
+  .card-grid{
+    gap: 10px;
+  }
 }
 
 .card-img {
@@ -46,9 +64,17 @@
   justify-content: center;
 }
 .card-img img{
-  min-width: 80px;
-
+  width: 60px;
+  height: 60px;
 }
+
+@media (min-width: 1200px) {
+  .card-img img{
+    width: 80px;
+    height: 80px;
+  }
+}
+
 
 .card-output{
   display: flex;
@@ -57,18 +83,18 @@
   gap: 5px;
 }
 .card-output img{
-  width: 18px;
+  width: 12px;
 }
 .card-output-amount{
-  font-size: large;
+  font-size: medium;
   font-weight: bolder;
 }
 
 
 .card-output-tag{
-  padding: 2px 3px;
+  padding: 1px 2px;
 
-  font-size: small;
+  font-size: smaller;
   font-weight: bold;
   color: #1d1d1d;
   background-color: #e23f34;
@@ -87,11 +113,11 @@
 
 }
 .card-machine p {
-  font-size: large;
+  font-size: medium;
   font-weight: bold;
 }
 .card-machine img{
-  width: 30px;
+  width: 25px;
 }
 
 
