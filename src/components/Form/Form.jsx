@@ -33,7 +33,9 @@ function Form({setFirstItem}){
         <input type="number" name="inAmount" step="0.5" min="1" max="2000" defaultValue="20"/>
       </div>
 
-      <button type="submit"><img src={hammerIcon} alt="hammer_icon"/></button>  
+
+      <button type="submit"><img src="/imgs/icons/hammer_icon.png" alt="hammer_icon"/></button>  
+
         
     </form>
 )}
